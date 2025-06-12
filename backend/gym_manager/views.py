@@ -14,7 +14,7 @@ class ClienteViewSet(viewsets.ModelViewSet):
 
 class MaquinaViewSet(viewsets.ModelViewSet):
     queryset = maquina.objects.all()
-    serializer_class = ClienteSerializer
+    serializer_class = MaquinaSerializer
 
 class ProductoViewSet(viewsets.ModelViewSet):
     queryset = producto.objects.all()
