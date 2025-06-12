@@ -13,7 +13,7 @@ class cliente(models.Model):
     tipo_membresia = models.CharField(max_length=50)
     activo = models.BooleanField(default=True)
     fecha_prox_pago = models.DateField()
-    entrenador_id = models.ForeignKey(empleado, on_delete=models.CASCADE)
+    entrenador_id = models.ForeignKey(empleado, on_delete=models.CASCADE, null=True)
 
 class maquina(models.Model):
     nombre = models.CharField(max_length=100)
